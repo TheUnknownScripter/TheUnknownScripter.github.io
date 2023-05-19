@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: white;
+    background-image: url("https://raw.githubusercontent.com/TheUnknownScripter/TheUnknownScripter.github.io/main/gradient.png");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+button {
+    background-image: url("https://raw.githubusercontent.com/TheUnknownScripter/TheUnknownScripter.github.io/main/gradient.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 20px;
+    width: 260px;
+    height: 40px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
