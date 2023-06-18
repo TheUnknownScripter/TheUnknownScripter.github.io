@@ -1,41 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 body {
-    background-color: black;
-    color: white;
-    background-image: url("https://raw.githubusercontent.com/TheUnknownScripter/TheUnknownScripter.github.io/main/gradient.png");
-    background-size: cover;
-    background-position: center;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
 }
 
 h1 {
-    font-family: serif;
-    font-size: 32px;
+    font-family: "Fira Code", monospace;
+    font-size: 24px;
     font-weight: 400;
+    color: #ffffff;
 }
 
 h2 {
-    font-family: serif;
-    font-size: 24px;
+    font-family: "Fira Code", monospace;
+    font-size: 18px;
     font-weight: 400;
+    color: #ffffff;
 }
 
-button {
-    background-image: url("https://raw.githubusercontent.com/TheUnknownScripter/TheUnknownScripter.github.io/main/gradient.png");
-    background-size: cover;
-    background-position: center;
+.DefaultButton {
+    background-color: #0f0f0f;
     border: 2px solid #ffffff;
-    border-radius: 5px;
     color: white;
-    padding: 10px 20px;
     text-align: center;
-    font-family: serif;
-    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-size: 13px;
     font-weight: 400;
     border-radius: 20px;
     width: 260px;
     height: 40px;
+    cursor: pointer;
+    position: relative;
 }
 
-div {
+.Mainframe {
     display: flex;
     align-items: center;
+    width: 860px;
+    height: 460px;
+    text-align: center;
+    padding: 20px;
+    background: #0f0f0f;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.ScriptDownloader {
+    display: flex;
+    width: 280px;
+    height: 320px;
+    text-align: center;
+    background: #0f0f0f;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    transform: translateY(20%);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.ProjectDownloader {
+    display: flex;
+    width: 280px;
+    height: 320px;
+    text-align: center;
+    background: #0f0f0f;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+    left: 1%;
+    bottom: 0%;
+    transform: translateY(20%);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.ProjectTextLabel {
+    font-family: "Fira Code", monospace;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    left: 37.5%;
+    top: 21%;
+    transform: translateY(0%);
+}
+
+.ScriptTextLabel {
+    font-family: "Fira Code", monospace;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    left: 5.5%;
+    top: 21%;
+    transform: translateY(0%);
+}
+
+.HubLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Discord {
+    background-color: #0f0f0f;
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    border: 2px solid #ffffff;
+    color: white;
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+    width: 220px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.TopCenter {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.long-text {
+    white-space: nowrap;
 }
