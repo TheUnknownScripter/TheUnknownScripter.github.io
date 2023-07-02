@@ -76,7 +76,8 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 3px;
+    padding-top: 5px;
+    gap: 5px;
 }
 
 .ProjectDownloader {
@@ -94,7 +95,8 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 3px;
+    padding-top: 5px;
+    gap: 5px;
 }
 
 .ProjectTextLabel {
