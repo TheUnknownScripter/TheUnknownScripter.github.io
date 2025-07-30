@@ -1,42 +1,66 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheUnknownScripter's Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Website Style.css">
 </head>
-
 <body>
     <div class="Mainframe">
         <img src="https://raw.githubusercontent.com/TheUnknownScripter/TheUnknownScripter.github.io/main/Hub%20Logo.png"
-            alt="Fuckin imagine refused to load" width="108" height="98" class="HubLogo">
-        <h1 class="TopCenter long-text">TheUnknownScripter's Project's & Script's Manager</h1>
-        <a href="https://discord.gg/hayTNdECvs">
-            <button class="Discord long-text">Join Unknown Community</button>
+            alt="Hub Logo" width="108" height="98" class="HubLogo">
+        <h1 class="TopCenter long-text">TheUnknownScripter's Content Manager</h1>
+        
+        <div class="tab-container">
+            <button class="tab-button active" data-tab="scripts">Scripts</button>
+            <button class="tab-button" data-tab="projects">Projects</button>
+        </div>
+        
+        <div class="tab-content active" id="scripts">
+            <div class="dropdown">
+                <button class="dropdown-btn">DBZFS Scripts <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://link-target.net/681589/tus-auto-broly" class="download-link">
+                        <button class="DefaultButton hover-effect">Auto Broly v5.1.0</button>
+                    </a>
+                    <a href="https://link-hub.net/681589/tus-auto-top" class="download-link">
+                        <button class="DefaultButton hover-effect">Auto TOP v4.1.0</button>
+                    </a>
+                    <a href="https://link-target.net/681589/tus-auto-htc" class="download-link">
+                        <button class="DefaultButton hover-effect">Auto HTC v2.1.0</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="standalone-button">
+                <a href="https://link-target.net/681589/unknown-hub" class="download-link">
+                    <button class="DefaultButton hover-effect hub-button">Unknown Hub v0.4.0</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="projects">
+            <div class="dropdown">
+                <button class="dropdown-btn">External Projects <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://link-hub.net/681589/auto-reloader-v300" class="download-link">
+                        <button class="DefaultButton hover-effect">Auto Reloader v3.0.2</button>
+                    </a>
+                    <a href="https://direct-link.net/681589/auto-clicker-v000" class="download-link">
+                        <button class="DefaultButton hover-effect">Auto Clicker v0.0.0</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="https://discord.gg/z2y3ahZ4wD" class="discord-link">
+            <button class="Discord long-text hover-effect">
+                <i class="fab fa-discord"></i> Join My Community
+            </button>
         </a>
-        <h1 class="ScriptTextLabel">Script Download's</h1>
-        <div class="ScriptDownloader">
-            <a href="https://link-target.net/681589/tus-auto-broly">
-                <button class="DefaultButton">Auto Broly v5.1.0</button>
-            </a>
-            <a href="https://link-hub.net/681589/tus-auto-top">
-                <button class="DefaultButton">Auto TOP v4.1.0</button>
-            </a>
-            <a href="https://link-target.net/681589/tus-auto-htc">
-                <button class="DefaultButton">Auto HTC v2.1.0</button>
-            </a>
-            <a href="https://link-target.net/681589/unknown-hub">
-                <button class="DefaultButton">Unknown Hub v0.4.0</button>
-            </a>
-        </div>
-        <h1 class="ProjectTextLabel">Project Download's</h1>
-        <div class="ProjectDownloader">
-            <a href="https://link-hub.net/681589/auto-reloader-v300">
-                <button class="DefaultButton">Auto Reloader v3.0.2</button>
-            </a>
-            <a href="https://direct-link.net/681589/auto-clicker-v000">
-                <button class="DefaultButton">Auto Clicker v0.0.0</button>
-            </a>
-        </div>
     </div>
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
